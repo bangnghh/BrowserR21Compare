@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <helpParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<helpData>
-		<viewLocation>R:\HELP.TEXT\HelpText\</viewLocation>
-		<editLocation>R:\HELP.TEXT\HelpText\</editLocation>
+		<viewLocation>/jboss/R21HelpText.V1/HelpText/</viewLocation>
+		<editLocation>/jboss/R21HelpText.V1/HelpText</editLocation>
 		<language>GB</language>
-		<imagesDir>R:\HELP.TEXT\HelpText\HelpImages\</imagesDir>
+		<imagesDir>/jboss/R21HelpText.V1/HelpImages/</imagesDir>
 		<editable>NO</editable>
 		<devMode>NO</devMode>
 	</helpData>

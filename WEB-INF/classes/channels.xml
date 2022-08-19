@@ -44,7 +44,7 @@
 			</CONSUMER>
 		</ADAPTER>
 	</CHANNEL>
-	
+
 	<CHANNEL>
         <NAME>FileUploadChannel</NAME>
         <TIMEOUT>120</TIMEOUT>
@@ -64,7 +64,7 @@
             </CONSUMER>
         </ADAPTER>
     </CHANNEL>
-    
+	
     <CHANNEL>
         <NAME>DbUploadDownloadChannel</NAME>
         <TIMEOUT>120</TIMEOUT>
@@ -84,7 +84,7 @@
             </CONSUMER>
         </ADAPTER>
     </CHANNEL>
-
+	
 	<CHANNEL>
 		<NAME> mq.sample </NAME>
 		<TIMEOUT> 15 </TIMEOUT>
