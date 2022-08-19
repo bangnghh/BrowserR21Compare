@@ -1,0 +1,16 @@
+<instances>
+        <instance name="production">
+		<encrypt>false</encrypt>
+		<compress>false</compress>
+		<retryperchannel>2</retryperchannel>
+		<encoding></encoding>
+		<verbose>false</verbose>
+		<channels>
+			<channel>browser.1</channel>
+			<channel>browser.2</channel>
+            <channel>FileUploadDownloadChannel</channel>
+            <channel>DbUploadDownloadChannel</channel>	
+			<channel>FileUploadChannel<channel>		
+		</channels>
+	</instance>
+</instances>

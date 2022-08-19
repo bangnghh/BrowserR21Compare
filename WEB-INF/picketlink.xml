@@ -1,0 +1,36 @@
+<!-- Enable the below picketlink configuration only when SSO with SAML and ADFS is enabled -->
+<?xml version="1.0" encoding="UTF-8"?>
+<PicketLink xmlns="urn:picketlink:identity-federation:config:2.1" EnableAudit="true">
+	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:1.0" 
+		ServerEnvironment="tomcat" BindingType="POST" SupportsSignatures="false">
+			<!--IDPURL - refers to the URL of the Identity Provider used by this Service Provider ex:https://IDP DomainName/adfs/ls/ -->
+			<IdentityURL>https://IDPDomainName/adfs/ls/</IdentityURL>
+			
+			<!--ServiceURL - refers to the URL of the Service Provider with domain name and https port number  -->
+			<ServiceURL>https://ServiceProvider DomainName:port number/BrowserWeb/</ServiceURL>
+	<Trust>            
+		<Domains>IDPDomainName,ServiceProviderDomainName</Domains>        
+	</Trust>
+			<!-- keys generated using tool portecle should be set -->
+			<KeyProvider ClassName="org.picketlink.identity.federation.core.impl.KeyStoreKeyManager">
+			<Auth Key="KeyStoreURL" Value="keystore key path" /> <!--Ex:key.jks -->
+				<Auth Key="KeyStorePass" Value="keystorepassword" />
+				<Auth Key="SigningKeyPass" Value="keystorepassword" />
+				<Auth Key="SigningKeyAlias" Value="signingkeyaliasname" />
+				<ValidatingAlias Key="IDPDomainName" Value="AliasName" />
+			</KeyProvider>
+	</PicketLinkSP>
+
+	<Handlers xmlns="urn:picketlink:identity-federation:handler:config:2.1">
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2LogOutHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureGenerationHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureValidationHandler" />
+	</Handlers>
+</PicketLink>

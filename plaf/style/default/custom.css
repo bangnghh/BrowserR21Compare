@@ -1,0 +1,312 @@
+/* Meant for custom style classes 
+ syntax:
+ -------
+<attribute for which style should be applied>
+ {
+    property-name:property-value;
+    property-name:property-value;
+ }
+*/
+
+.EmEnquiryHighlightFont1 {
+    font-weight:bold;
+    font-size:16px;
+    color: navy;
+}
+
+.EmEnquiryHighlightFont2 {
+    font-weight:bold;
+    font-size:14px;
+    color: navy;
+}
+
+.EmEnquiryTextFont {
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+}
+
+.EmEnquiryTextEmphasisedFont {
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+}
+
+.EmEnquiryNumberPositive {
+    font-weight: normal;
+    font-size: 11px;
+    color: green;
+}
+
+.EmEnquiryNumberNegative {
+    font-weight: normal;
+    font-size: 11px;
+    color: red;
+}
+
+.EmToolbarTopMenu {
+    white-space: normal;
+    margin-top: 1px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    margin-left: 3px;
+    color: black;
+    font-size: 11px;
+    font-family: Arial Narrow,Arial,sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.EmToolTopMenu {
+    white-space: normal;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    color: black;
+    font-size: 11px;
+    font-family: Arial Narrow,Arial,sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+}
+
+.EmToolTopMenu:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+.EmToolbarRoleTitle {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: navy;
+}
+
+.EmToolRoleTitle {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.EmToolbarHorizontalTop {
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid navy;
+}
+
+.EmToolbarHorizontal {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid navy;
+    
+}
+
+.EmToolbarHorizontalTop td:first-child {
+    width: 100%;
+}
+
+.EmToolbarHorizontal td:first-child {
+    width: 100%;
+}
+
+.EmToolTitle {
+    white-space: nowrap;
+    margin-right: 20px;
+    color: navy;
+    font-size: 16px;
+    font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.EmToolHorizontal {
+    white-space: nowrap;
+    margin-left: 14px;
+    margin-right: 4px;
+    color: navy;
+    font-size: 13px;
+    font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    float: right;
+    clear: right;
+}
+
+.EmToolHorizontal:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+.EmToolMenu {
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    color: navy;
+    font-size: 13px;
+    font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+}
+
+.EmToolMenu:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+.display_box_EMSCVOVERVIEW, .display_box_EMSCVPERSONALDETAILS, .display_box_EMSCVENTITYDETAILS {
+    border:none;
+    background-color:#E0EBEA;
+}
+
+.display_box_EMSCVOVERVIEW td, .display_box_EMSCVPERSONALDETAILS td , .display_box_EMSCVENTITYDETAILS td {
+    background-color:#E0EBEA;
+}
+
+.display_box_EMSCVPERSONALDETAILS  .columnHeader {
+    background-color:#E0EBEA;
+    font-weight:normal;
+}
+
+.display_box_EMSCVENTITYDETAILS  .columnHeader {
+    background-color:#E0EBEA;
+    font-weight:normal;
+}
+
+.display_box_EMSGVOVERVIEW, .display_box_EMSGVOVERVIEWDET, .display_box_EMSGCVOVERVIEW, .display_box_EMSGCVOVERVIEWDET {
+    border:none;
+    background-color:#E0EBEA;
+}
+
+.display_box_EMSGVOVERVIEW td, .display_box_EMSGVOVERVIEWDET td, .display_box_EMSGCVOVERVIEW td, .display_box_EMSGCVOVERVIEWDET td {
+    background-color:#E0EBEA;
+}
+
+.EmEnquiryRight {
+    text-align: right;
+}
+.EmEnquiryRightRed {
+    text-align: right;
+    color: red;
+}
+.EmEnquiryRightItalic {
+    text-align: right;
+    font-style:  oblique;
+}
+.EmEnquiryRightDarkRed {
+    text-align: right;
+    color: darkred;
+}
+ 
+.EmEnquiryRightBold {
+    text-align: right;
+    font-weight: bold;
+}
+.EmEnquiryRightBoldRed {
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+.EmEnquiryRightBoldItalic {
+    text-align: right;
+    font-weight: bold;
+    font-style:  oblique;
+}
+.EmEnquiryRightBoldDarkRed {
+    text-align: right;
+    font-weight: bold;
+    color: darkred;
+}
+.EmEnquiryRightBoldRedItalic {
+    text-align: right;
+    font-weight: bold;
+    font-style:  oblique;
+    color: red;
+}
+.EmEnquiryTransparent {
+    color: transparent;
+}
+
+/* ******** Formatting of IM images displayed within COSes and RBHPS *********  */
+
+
+
+.enquirydata_EMCURPICTURES td>img {
+    height: 30px;
+       border: solid 1px silver;
+       padding: 1px;
+}
+.enquirydata_EMCURPICTURE td>img,
+.enquirydata_EMCURPICTUREM td>img {
+    height: 75px;
+       border: solid 1px silver;
+       padding: 1px;
+}
+.enquirydata_EMCURPICTUREL td>img {
+    height: 120px;
+       border: solid 1px silver;
+       padding: 1px;
+}
+
+.enquirydata_IMAGEDISPLAY img {
+    height: 300px;
+}
+
+/* **** Enquiries with lists of IM images records, where small Images are presented in dedicated column as a preview**** */
+.enquirydata_EMSCVIMAGES img,
+.enquirydata_EMMANDATEACC img {
+       max-height: 30px;
+}
+/* **** Html frames surrounding images, which margin, padding etc. should be reduced ****  */
+.enquiryDataScroller_EMCURPICTUREM .enquirydata_EMCURPICTURE .colour0 td,
+.enquiryDataScroller_EMCURPICTUREL .enquirydata_EMCURPICTURES .colour0 td,
+.enquiryDataScroller_EMCURPICTUREM .enquirydata_EMCURPICTUREM .colour0 td,
+.enquiryDataScroller_EMCURPICTUREL .enquirydata_EMCURPICTUREL .colour0 td,
+.enquiry_response_EMCURPICTURE,
+.enquiry_response_EMCURPICTURES,
+.enquiry_response_EMCURPICTUREM,
+.enquiry_response_EMCURPICTUREL,
+.enquiry_response_EMCURPICTURE .enquirydata th,
+.enquiry_response_EMCURPICTURES .enquirydata th,
+.enquiry_response_EMCURPICTUREM .enquirydata th,
+.enquiry_response_EMCURPICTUREL .enquirydata th,
+.caption_EMCURPICTURE,
+.caption_EMCURPICTURES,
+.caption_EMCURPICTUREM,
+.caption_EMCURPICTUREL,
+.colour0_EMCURPICTURE,
+.colour0_EMCURPICTURES,
+.colour0_EMCURPICTUREM,
+.colour0_EMCURPICTUREL,
+.enquirydatascroller table.enquirydata_EMCURPICTURE,
+.enquirydatascroller table.enquirydata_EMCURPICTURES,
+.enquirydatascroller table.enquirydata_EMCURPICTUREM,
+.enquirydatascroller table.enquirydata_EMCURPICTUREL { 
+       background-color: transparent;
+       border: 0px;
+       padding: 0px;
+       margin: 0px;
+}
+
+

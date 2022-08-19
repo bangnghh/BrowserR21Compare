@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<helpParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<helpData>
+		<viewLocation>R:\HELP.TEXT\HelpText\</viewLocation>
+		<editLocation>R:\HELP.TEXT\HelpText\</editLocation>
+		<language>GB</language>
+		<imagesDir>R:\HELP.TEXT\HelpText\HelpImages\</imagesDir>
+		<editable>NO</editable>
+		<devMode>NO</devMode>
+	</helpData>
+</helpParameters>

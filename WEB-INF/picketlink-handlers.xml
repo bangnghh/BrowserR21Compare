@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Handlers xmlns="urn:picketlink:identity-federation:handler:config:1.0"> 
+	<!-- Handler dealing with attributes for SAML2. On the SP side, it converts IDP-returned Attributes and stores them under the user's HttpSession. -->
+	<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2IssuerTrustHandler"/>  
+	<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2LogOutHandler"/> 
+	<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler"/>   
+	<Handler class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler"/>
+</Handlers>

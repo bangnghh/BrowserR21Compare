@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+<!--
+    <security-domain>java:/jaas/T24</security-domain>
+-->
+<!--Start - Enable the below security domain and valves configuration only when SSO with SAML and ADFS is enabled -->
+<!--<security-domain>tsp</security-domain>
+    <valve>   
+        <class-name>org.picketlink.identity.federation.bindings.tomcat.sp.ServiceProviderAuthenticator</class-name>
+    </valve> -->
+<!-- End -->
+
+<!-- 
+    <resource-ref>
+        <res-ref-name>jca/t24ConnectionFactory</res-ref-name>
+        <res-type>com.temenos.tocf.t24ra.T24ConnectionFactory</res-type>
+        <jndi-name>java:/jca/t24ConnectionFactory</jndi-name> -->  
+        <!--                        
+        For lower versions of JBoss(below EAP6) comment the line above and uncomment the line below.
+        <jndi-name>java:jca/t24ConnectionFactory</jndi-name>  
+        --> <!--        
+    </resource-ref>  
+-->
+
+
+    <resource-ref>
+        <res-ref-name>jca/t24ConnectionFactory</res-ref-name>
+        <res-type>com.temenos.tocf.t24ra.T24ConnectionFactory</res-type>
+        <jndi-name>java:/jca/t24ConnectionFactory</jndi-name>       
+    </resource-ref>  
+
+    <resource-ref>
+        <res-ref-name>jms/jmsConnectionFactory</res-ref-name>
+        <res-type>javax.jms.ConnectionFactory</res-type>
+        <jndi-name>java:/ConnectionFactory</jndi-name>
+    </resource-ref>
+    <resource-ref>
+        <res-ref-name>queue/t24OFSQueue</res-ref-name>
+        <res-type>javax.jms.Queue</res-type>
+        <jndi-name>java:/queue/t24BROWSERQueue</jndi-name>
+        <!-- For lower versions of JBoss(below EAP6) comment the line above and uncomment the line below. -->
+        <!--         
+        <jndi-name>queue/t24BROWSERQueue</jndi-name>  
+        -->
+    </resource-ref>
+    <resource-ref>
+        <res-ref-name>queue/t24OFSReplyQueue</res-ref-name>
+        <res-type>javax.jms.Queue</res-type>
+        <jndi-name>java:/queue/t24BROWSERReplyQueue</jndi-name>   
+        <!-- For lower versions of JBoss(below EAP6) comment the line above and uncomment the line below. -->
+        <!--         
+        <jndi-name>queue/t24BROWSERReplyQueue</jndi-name>   
+        -->       
+    </resource-ref>
+</jboss-web>
+

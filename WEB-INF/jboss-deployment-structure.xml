@@ -1,0 +1,20 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+                <deployment>
+                       <!-- Adding Resource Adapter As Explicit Module Dependency-->
+                       <!-- for TAFC in JBoss AS7 or EAP 6 uncomment the line below -->
+                           <!-- <dependencies>
+                                                <module name="deployment.tocfT24ra-ra.rar" />
+                                </dependencies>-->  
+					<dependencies>
+                        <module name="deployment.tocfT24ra-ra.rar" />
+                    </dependencies> 
+                                <!--Enable the below configuration only when SSO with SAML and ADFS is enabled-->
+                                                 <!--<module name="org.apache.xerces" />
+					 							 <module name="org.picketlink" /> -->
+			<!-- Exclusions allow you to prevent the server from automatically adding some dependencies -->
+                                <exclusions>
+                                               <module name="org.apache.log4j" />
+                                </exclusions>        
+                </deployment>
+</jboss-deployment-structure>
+	
